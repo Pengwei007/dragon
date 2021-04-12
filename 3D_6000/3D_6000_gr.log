@@ -1,0 +1,1290 @@
+
+Building mesh ............................................................................
+..........................................................................................
+..........................................................................................
+..................................                                                         [[33m291.57 s[39m]
+Initializing equation system ................................                              [[33m 33.04 s[39m]
+Computing max dofs per elem/node .                                                         [[33m  2.11 s[39m]
+
+Framework Information:
+MOOSE Version:           git commit 54c00d0775 on 2020-12-17
+LibMesh Version:         c176405e538983b35afc4f6827e29e155141e42e
+PETSc Version:           3.14.2
+SLEPc Version:           3.14.0
+Current Time:            Sun Apr 11 10:33:12 2021
+Executable Timestamp:    Sun Dec 20 22:02:49 2020
+
+Parallelism:
+  Num Processors:          30
+  Num Threads:             1
+
+Mesh: 
+  Parallel Type:           distributed
+  Mesh Dimension:          3
+  Spatial Dimension:       3
+  Nodes:                   
+    Total:                 5929741
+    Local:                 205792
+  Elems:                   
+    Total:                 5832000
+    Local:                 194399
+  Num Subdomains:          1
+  Num Partitions:          30
+  Partitioner:             parmetis
+
+Nonlinear System:
+  Num DOFs:                166032748
+  Num Local DOFs:          5762176
+  Variables:               { "gr0" "gr1" "gr2" "gr3" "gr4" ... "gr23" "gr24" "gr25" "gr26" "gr27" } 
+  Finite Element Types:    "LAGRANGE" 
+  Approximation Orders:    "FIRST" 
+
+Auxiliary System:
+  Num DOFs:                29257741
+  Num Local DOFs:          983388
+  Variables:               "bnds" { "unique_grains" "ghost_elements" "halos" "var_indices" } 
+  Finite Element Types:    "LAGRANGE" "MONOMIAL" 
+  Approximation Orders:    "FIRST" "CONSTANT" 
+
+Execution Information:
+  Executioner:             Transient
+  TimeStepper:             IterationAdaptiveDT
+  Solver Mode:             Preconditioned JFNK
+  PETSc Preconditioner:    asm 
+
+[31mLEGACY MODES ENABLED:[39m
+ This application uses the legacy material output option: material properties are output only on TIMESTEP_END, not INITIAL. To remove this message, set 'use_legacy_material_output' to false in this application. If there are gold output files that contain material property output for which output occurs on INITIAL, then these will generate diffs due to zero values being stored, and these tests should be re-golded.
+[39m
+Computing Polycrystal Initial Condition ..................................................
+....................................                                                       [[33m 87.19 s[39m]
+Finalizing Polycrystal Initial Condition ........................                          [[33m 25.98 s[39m]
+Projecting initial condition .............................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+....................                                                                       [[33m17904.43 s[39m]
+Computing initial stateful property values ...............                                 [[33m 16.11 s[39m]
+Flooding Features ........................................................................
+..........................................................................................
+..................................................................................         [[33m245.17 s[39m]
+[33mGrain #44 intersects Grain #550 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #44 from variable index 0 to 27 which currently contains zero grains.
+
+[39m[33mGrain #54 intersects Grain #56 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #54 from variable index 0 to 20 which currently contains zero grains.
+
+[39m[33mGrain #66 intersects Grain #162 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #66 from variable index 0 to 26 which currently contains zero grains.
+
+[39m[33mGrain #80 intersects Grain #108 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #80 from variable index 0 to 25 which currently contains zero grains.
+
+[39m[33mGrain #107 intersects Grain #113 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #107 from variable index 0 to 24 which currently contains zero grains.
+
+[39m[33mGrain #126 intersects Grain #129 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #126 from variable index 0 to 23 which currently contains zero grains.
+
+[39m[33mGrain #133 intersects Grain #135 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #133 from variable index 0 to 22 which currently contains zero grains.
+
+[39m[33mGrain #147 intersects Grain #487 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #147 from variable index 0 to 21 which currently contains zero grains.
+
+[39m[33mGrain #148 intersects Grain #155 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #148 from variable index 0 to 19 which currently contains zero grains.
+
+[39m[33mGrain #151 intersects Grain #179 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #151 from variable index 0 to 18 which currently contains zero grains.
+
+[39m[33mGrain #155 intersects Grain #180 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #155 from variable index 0 to 17 which currently contains zero grains.
+
+[39m[33mGrain #157 intersects Grain #186 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #157 from variable index 0 to 16 which currently contains zero grains.
+
+[39m[33mGrain #164 intersects Grain #165 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #164 from variable index 0 to 24 whose closest grain (#107) is at a distance of 75.1332
+
+[39m[33mGrain #191 intersects Grain #289 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #191 from variable index 0 to 25 whose closest grain (#80) is at a distance of 98.4886
+
+[39m[33mGrain #193 intersects Grain #451 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #193 from variable index 0 to 20 whose closest grain (#54) is at a distance of 83.9226
+
+[39m[33mGrain #210 intersects Grain #215 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #210 from variable index 0 to 27 whose closest grain (#44) is at a distance of 118.089
+
+[39m[33mGrain #227 intersects Grain #228 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #227 from variable index 0 to 23 whose closest grain (#126) is at a distance of 97.5961
+
+[39m[33mGrain #251 intersects Grain #260 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #251 from variable index 0 to 18 whose closest grain (#151) is at a distance of 158.751
+
+[39m[33mGrain #258 intersects Grain #263 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #258 from variable index 0 to 21 whose closest grain (#147) is at a distance of 140.175
+
+[39m[33mGrain #259 intersects Grain #260 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #259 from variable index 0 to 22 whose closest grain (#133) is at a distance of 123.491
+
+[39m[33mGrain #265 intersects Grain #266 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #265 from variable index 0 to 16 whose closest grain (#157) is at a distance of 124.631
+
+[39m[33mGrain #273 intersects Grain #276 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #273 from variable index 0 to 17 whose closest grain (#155) is at a distance of 93.0108
+
+[39m[33mGrain #282 intersects Grain #284 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #282 from variable index 0 to 16 whose closest grain (#265) is at a distance of 77.8332
+
+[39m[33mGrain #289 intersects Grain #353 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #289 from variable index 0 to 18 whose closest grain (#251) is at a distance of 78.5111
+
+[39m[33mGrain #309 intersects Grain #328 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #309 from variable index 0 to 20 whose closest grain (#193) is at a distance of 116.662
+
+[39m[33mGrain #330 intersects Grain #398 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #330 from variable index 0 to 26 whose closest grain (#66) is at a distance of 122.348
+
+[39m[33mGrain #334 intersects Grain #336 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #334 from variable index 0 to 24 whose closest grain (#164) is at a distance of 123.568
+
+[39m[33mGrain #345 intersects Grain #542 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #345 from variable index 0 to 22 whose closest grain (#259) is at a distance of 104.981
+
+[39m[33mGrain #347 intersects Grain #349 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #347 from variable index 0 to 23 whose closest grain (#227) is at a distance of 91.2414
+
+[39m[33mGrain #381 intersects Grain #427 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #381 from variable index 0 to 24 whose closest grain (#334) is at a distance of 108.014
+
+[39m[33mGrain #394 intersects Grain #397 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #394 from variable index 0 to 17 whose closest grain (#155) is at a distance of 128.16
+
+[39m[33mGrain #396 intersects Grain #398 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #396 from variable index 0 to 27 whose closest grain (#44) is at a distance of 118.533
+
+[39m[33mGrain #400 intersects Grain #428 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #400 from variable index 0 to 16 whose closest grain (#157) is at a distance of 66.7083
+
+[39m[33mGrain #426 intersects Grain #429 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #426 from variable index 0 to 22 whose closest grain (#345) is at a distance of 100.11
+
+[39m[33mGrain #442 intersects Grain #444 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #442 from variable index 0 to 26 whose closest grain (#330) is at a distance of 68.0735
+
+[39m[33mGrain #445 intersects Grain #446 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #445 from variable index 0 to 18 whose closest grain (#289) is at a distance of 102.426
+
+[39m[33mGrain #450 intersects Grain #452 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #450 from variable index 0 to 27 whose closest grain (#210) is at a distance of 72.7805
+
+[39m[33mGrain #455 intersects Grain #538 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #455 from variable index 0 to 20 whose closest grain (#193) is at a distance of 100.31
+
+[39m[33mGrain #466 intersects Grain #541 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #466 from variable index 0 to 25 whose closest grain (#191) is at a distance of 52.2015
+
+[39m[33mGrain #482 intersects Grain #489 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #482 from variable index 0 to 23 whose closest grain (#347) is at a distance of 66.3174
+
+[39m[33mGrain #487 intersects Grain #493 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #487 from variable index 0 to 22 whose closest grain (#133) is at a distance of 55
+
+[39m[33mGrain #523 intersects Grain #551 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #523 from variable index 0 to 18 whose closest grain (#289) is at a distance of 70.7107
+
+[39m[33mGrain #525 intersects Grain #545 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #525 from variable index 0 to 24 whose closest grain (#107) is at a distance of 105.849
+
+[39m[33mGrain #537 intersects Grain #538 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #537 from variable index 0 to 16 whose closest grain (#282) is at a distance of 74.3034
+
+[39m[33mGrain #538 intersects Grain #539 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #538 from variable index 0 to 17 whose closest grain (#155) is at a distance of 82.1888
+
+[39m[33mGrain #564 intersects Grain #566 (variable index: 0)
+[39m[32m- Depth 0: Remapping grain #564 from variable index 0 to 21 whose closest grain (#147) is at a distance of 124.924
+
+[39m[33mGrain #622 intersects Grain #623 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #622 from variable index 1 to 23 whose closest grain (#482) is at a distance of 75.1598
+
+[39m[33mGrain #625 intersects Grain #1120 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #625 from variable index 1 to 17 whose closest grain (#538) is at a distance of 62.3939
+
+[39m[33mGrain #634 intersects Grain #859 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #634 from variable index 1 to 26 whose closest grain (#66) is at a distance of 82.4257
+
+[39m[33mGrain #666 intersects Grain #708 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #666 from variable index 1 to 17 whose closest grain (#155) is at a distance of 67.5352
+
+[39m[33mGrain #673 intersects Grain #742 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #673 from variable index 1 to 27 whose closest grain (#44) is at a distance of 60.1415
+
+[39m[33mGrain #697 intersects Grain #699 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #697 from variable index 1 to 18 whose closest grain (#151) is at a distance of 49.4065
+
+[39m[33mGrain #717 intersects Grain #719 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #717 from variable index 1 to 19 whose closest grain (#148) is at a distance of 49.0408
+
+[39m[33mGrain #741 intersects Grain #766 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #741 from variable index 1 to 23 whose closest grain (#227) is at a distance of 42.0476
+
+[39m[33mGrain #761 intersects Grain #763 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #761 from variable index 1 to 25 whose closest grain (#191) is at a distance of 57.0088
+
+[39m[33mGrain #773 intersects Grain #782 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #773 from variable index 1 to 22 whose closest grain (#487) is at a distance of 38.0789
+
+[39m[33mGrain #814 intersects Grain #816 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #814 from variable index 1 to 21 whose closest grain (#147) is at a distance of 77.8781
+
+[39m[33mGrain #823 intersects Grain #867 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #823 from variable index 1 to 27 whose closest grain (#44) is at a distance of 62.6259
+
+[39m[33mGrain #840 intersects Grain #843 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #840 from variable index 1 to 23 whose closest grain (#622) is at a distance of 78.6702
+
+[39m[33mGrain #858 intersects Grain #863 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #858 from variable index 1 to 24 whose closest grain (#164) is at a distance of 53.0377
+
+[39m[33mGrain #860 intersects Grain #862 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #860 from variable index 1 to 17 whose closest grain (#155) is at a distance of 45.0999
+
+[39m[33mGrain #877 intersects Grain #878 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #877 from variable index 1 to 19 whose closest grain (#148) is at a distance of 89.3812
+
+[39m[33mGrain #905 intersects Grain #927 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #905 from variable index 1 to 19 whose closest grain (#877) is at a distance of 67.3573
+
+[39m[33mGrain #909 intersects Grain #916 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #909 from variable index 1 to 21 whose closest grain (#564) is at a distance of 50.3289
+
+[39m[33mGrain #913 intersects Grain #1030 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #913 from variable index 1 to 27 whose closest grain (#44) is at a distance of 52.2015
+
+[39m[33mGrain #921 intersects Grain #923 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #921 from variable index 1 to 25 whose closest grain (#466) is at a distance of 56.0357
+
+[39m[33mGrain #925 intersects Grain #930 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #925 from variable index 1 to 24 whose closest grain (#334) is at a distance of 65.1613
+
+[39m[33mGrain #970 intersects Grain #972 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #970 from variable index 1 to 19 whose closest grain (#148) is at a distance of 84.6286
+
+[39m[33mGrain #998 intersects Grain #1003 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #998 from variable index 1 to 24 whose closest grain (#107) is at a distance of 60.8276
+
+[39m[33mGrain #999 intersects Grain #1006 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #999 from variable index 1 to 24 whose closest grain (#998) is at a distance of 39
+
+[39m[33mGrain #1012 intersects Grain #1081 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #1012 from variable index 1 to 24 whose closest grain (#999) is at a distance of 46.4004
+
+[39m[33mGrain #1015 intersects Grain #1018 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #1015 from variable index 1 to 26 whose closest grain (#442) is at a distance of 65.582
+
+[39m[33mGrain #1036 intersects Grain #1037 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #1036 from variable index 1 to 20 whose closest grain (#193) is at a distance of 66.9104
+
+[39m[33mGrain #1056 intersects Grain #1061 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #1056 from variable index 1 to 19 whose closest grain (#148) is at a distance of 97.0258
+
+[39m[33mGrain #1071 intersects Grain #1076 (variable index: 1)
+[39m[32m- Depth 0: Remapping grain #1071 from variable index 1 to 21 whose closest grain (#147) is at a distance of 54.5985
+
+[39m[33mGrain #1157 intersects Grain #1158 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1157 from variable index 2 to 25 whose closest grain (#80) is at a distance of 66.1967
+
+[39m[33mGrain #1167 intersects Grain #1211 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1167 from variable index 2 to 20 whose closest grain (#54) is at a distance of 56.9561
+
+[39m[33mGrain #1184 intersects Grain #1688 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1184 from variable index 2 to 23 whose closest grain (#840) is at a distance of 50.1597
+
+[39m[33mGrain #1205 intersects Grain #1253 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1205 from variable index 2 to 16 whose closest grain (#157) is at a distance of 41.2311
+
+[39m[33mGrain #1230 intersects Grain #1300 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1230 from variable index 2 to 21 whose closest grain (#147) is at a distance of 68.0147
+
+[39m[33mGrain #1239 intersects Grain #1242 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1239 from variable index 2 to 26 whose closest grain (#442) is at a distance of 67.2681
+
+[39m[33mGrain #1251 intersects Grain #1282 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1251 from variable index 2 to 21 whose closest grain (#147) is at a distance of 26.8328
+
+[39m[33mGrain #1263 intersects Grain #1264 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1263 from variable index 2 to 20 whose closest grain (#54) is at a distance of 64.0312
+
+[39m[33mGrain #1270 intersects Grain #1299 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1270 from variable index 2 to 17 whose closest grain (#666) is at a distance of 32.1403
+
+[39m[33mGrain #1272 intersects Grain #1299 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1272 from variable index 2 to 20 whose closest grain (#54) is at a distance of 26.9258
+
+[39m[33mGrain #1278 intersects Grain #1305 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1278 from variable index 2 to 26 whose closest grain (#66) is at a distance of 36.4005
+
+[39m[33mGrain #1298 intersects Grain #1301 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1298 from variable index 2 to 16 whose closest grain (#1205) is at a distance of 37
+
+[39m[33mGrain #1304 intersects Grain #1310 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1304 from variable index 2 to 25 whose closest grain (#191) is at a distance of 65
+
+[39m[33mGrain #1318 intersects Grain #1354 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1318 from variable index 2 to 18 whose closest grain (#151) is at a distance of 48.2597
+
+[39m[33mGrain #1335 intersects Grain #1342 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1335 from variable index 2 to 21 whose closest grain (#147) is at a distance of 50.01
+
+[39m[33mGrain #1338 intersects Grain #1339 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1338 from variable index 2 to 24 whose closest grain (#164) is at a distance of 59.9416
+
+[39m[33mGrain #1339 intersects Grain #1345 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1339 from variable index 2 to 20 whose closest grain (#1272) is at a distance of 60.1415
+
+[39m[33mGrain #1349 intersects Grain #1350 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1349 from variable index 2 to 17 whose closest grain (#155) is at a distance of 72.7393
+
+[39m[33mGrain #1358 intersects Grain #1523 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1358 from variable index 2 to 19 whose closest grain (#970) is at a distance of 45
+
+[39m[33mGrain #1386 intersects Grain #1390 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1386 from variable index 2 to 26 whose closest grain (#634) is at a distance of 72.118
+
+[39m[33mGrain #1400 intersects Grain #1401 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1400 from variable index 2 to 22 whose closest grain (#259) is at a distance of 41.0488
+
+[39m[33mGrain #1413 intersects Grain #1417 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1413 from variable index 2 to 25 whose closest grain (#191) is at a distance of 43.0116
+
+[39m[33mGrain #1415 intersects Grain #1420 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1415 from variable index 2 to 22 whose closest grain (#259) is at a distance of 41.4367
+
+[39m[33mGrain #1446 intersects Grain #1449 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1446 from variable index 2 to 20 whose closest grain (#309) is at a distance of 44.7772
+
+[39m[33mGrain #1457 intersects Grain #1465 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1457 from variable index 2 to 20 whose closest grain (#1446) is at a distance of 51.2445
+
+[39m[33mGrain #1459 intersects Grain #1460 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1459 from variable index 2 to 26 whose closest grain (#634) is at a distance of 37
+
+[39m[33mGrain #1463 intersects Grain #1584 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1463 from variable index 2 to 17 whose closest grain (#860) is at a distance of 39
+
+[39m[33mGrain #1470 intersects Grain #1471 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1470 from variable index 2 to 16 whose closest grain (#400) is at a distance of 45.0111
+
+[39m[33mGrain #1498 intersects Grain #1499 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1498 from variable index 2 to 19 whose closest grain (#1358) is at a distance of 56
+
+[39m[33mGrain #1516 intersects Grain #1538 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1516 from variable index 2 to 18 whose closest grain (#445) is at a distance of 51.1273
+
+[39m[33mGrain #1525 intersects Grain #1528 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1525 from variable index 2 to 23 whose closest grain (#347) is at a distance of 58.5235
+
+[39m[33mGrain #1534 intersects Grain #1537 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1534 from variable index 2 to 17 whose closest grain (#1463) is at a distance of 48
+
+[39m[33mGrain #1540 intersects Grain #1544 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1540 from variable index 2 to 25 whose closest grain (#466) is at a distance of 82.6741
+
+[39m[33mGrain #1544 intersects Grain #1545 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1544 from variable index 2 to 21 whose closest grain (#814) is at a distance of 66.9627
+
+[39m[33mGrain #1550 intersects Grain #1558 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1550 from variable index 2 to 19 whose closest grain (#148) is at a distance of 27.313
+
+[39m[33mGrain #1552 intersects Grain #1556 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1552 from variable index 2 to 27 whose closest grain (#450) is at a distance of 54.3323
+
+[39m[33mGrain #1554 intersects Grain #1559 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1554 from variable index 2 to 27 whose closest grain (#913) is at a distance of 31
+
+[39m[33mGrain #1567 intersects Grain #1669 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1567 from variable index 2 to 19 whose closest grain (#1550) is at a distance of 37.7359
+
+[39m[33mGrain #1570 intersects Grain #1618 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1570 from variable index 2 to 22 whose closest grain (#487) is at a distance of 43.3013
+
+[39m[33mGrain #1622 intersects Grain #1623 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1622 from variable index 2 to 16 whose closest grain (#537) is at a distance of 64.0078
+
+[39m[33mGrain #1629 intersects Grain #1633 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1629 from variable index 2 to 25 whose closest grain (#466) is at a distance of 49
+
+[39m[33mGrain #1651 intersects Grain #1652 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1651 from variable index 2 to 22 whose closest grain (#345) is at a distance of 50
+
+[39m[33mGrain #1676 intersects Grain #1689 (variable index: 2)
+[39m[32m- Depth 0: Remapping grain #1676 from variable index 2 to 26 whose closest grain (#634) is at a distance of 55.0273
+
+[39m[33mGrain #1704 intersects Grain #1707 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1704 from variable index 3 to 19 whose closest grain (#148) is at a distance of 97.9132
+
+[39m[33mGrain #1723 intersects Grain #1785 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1723 from variable index 3 to 19 whose closest grain (#1704) is at a distance of 49.98
+
+[39m[33mGrain #1727 intersects Grain #1955 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1727 from variable index 3 to 16 whose closest grain (#282) is at a distance of 49
+
+[39m[33mGrain #1731 intersects Grain #1734 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1731 from variable index 3 to 21 whose closest grain (#564) is at a distance of 50.6261
+
+[39m[33mGrain #1733 intersects Grain #2211 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1733 from variable index 3 to 18 whose closest grain (#523) is at a distance of 68.9493
+
+[39m[33mGrain #1742 intersects Grain #1743 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1742 from variable index 3 to 16 whose closest grain (#282) is at a distance of 34
+
+[39m[33mGrain #1747 intersects Grain #1970 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1747 from variable index 3 to 18 whose closest grain (#1733) is at a distance of 47
+
+[39m[33mGrain #1757 intersects Grain #1760 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1757 from variable index 3 to 22 whose closest grain (#133) is at a distance of 43.0465
+
+[39m[33mGrain #1764 intersects Grain #1767 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1764 from variable index 3 to 25 whose closest grain (#80) is at a distance of 38.1314
+
+[39m[33mGrain #1766 intersects Grain #1768 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1766 from variable index 3 to 18 whose closest grain (#697) is at a distance of 31.6228
+
+[39m[33mGrain #1768 intersects Grain #1956 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1768 from variable index 3 to 23 whose closest grain (#840) is at a distance of 26
+
+[39m[33mGrain #1771 intersects Grain #1774 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1771 from variable index 3 to 24 whose closest grain (#107) is at a distance of 65.8027
+
+[39m[33mGrain #1780 intersects Grain #1819 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1780 from variable index 3 to 26 whose closest grain (#66) is at a distance of 24.6982
+
+[39m[33mGrain #1801 intersects Grain #1806 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1801 from variable index 3 to 17 whose closest grain (#666) is at a distance of 43
+
+[39m[33mGrain #1828 intersects Grain #1829 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1828 from variable index 3 to 21 whose closest grain (#1251) is at a distance of 29
+
+[39m[33mGrain #1836 intersects Grain #1839 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1836 from variable index 3 to 23 whose closest grain (#741) is at a distance of 22.2036
+
+[39m[33mGrain #1839 intersects Grain #1843 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1839 from variable index 3 to 19 whose closest grain (#717) is at a distance of 22
+
+[39m[33mGrain #1880 intersects Grain #1885 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1880 from variable index 3 to 20 whose closest grain (#1167) is at a distance of 38.1838
+
+[39m[33mGrain #1881 intersects Grain #1890 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1881 from variable index 3 to 16 whose closest grain (#157) is at a distance of 37.0945
+
+[39m[33mGrain #1883 intersects Grain #1884 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1883 from variable index 3 to 17 whose closest grain (#1349) is at a distance of 46.8295
+
+[39m[33mGrain #1898 intersects Grain #1918 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1898 from variable index 3 to 26 whose closest grain (#442) is at a distance of 34.4384
+
+[39m[33mGrain #1903 intersects Grain #1926 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1903 from variable index 3 to 16 whose closest grain (#157) is at a distance of 46
+
+[39m[33mGrain #1947 intersects Grain #1949 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #1947 from variable index 3 to 15 whose closest grain (#5985) is at a distance of 74.2563
+
+[39m[33mGrain #2027 intersects Grain #2038 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2027 from variable index 3 to 18 whose closest grain (#289) is at a distance of 34.1321
+
+[39m[33mGrain #2037 intersects Grain #2038 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2037 from variable index 3 to 27 whose closest grain (#44) is at a distance of 49.4065
+
+[39m[33mGrain #2052 intersects Grain #2053 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2052 from variable index 3 to 25 whose closest grain (#1540) is at a distance of 44
+
+[39m[33mGrain #2079 intersects Grain #2100 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2079 from variable index 3 to 20 whose closest grain (#193) is at a distance of 25.2982
+
+[39m[33mGrain #2100 intersects Grain #2111 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2100 from variable index 3 to 18 whose closest grain (#1516) is at a distance of 25.2389
+
+[39m[33mGrain #2118 intersects Grain #2191 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2118 from variable index 3 to 27 whose closest grain (#913) is at a distance of 41.3159
+
+[39m[33mGrain #2119 intersects Grain #2123 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2119 from variable index 3 to 17 whose closest grain (#1801) is at a distance of 33
+
+[39m[33mGrain #2193 intersects Grain #2197 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2193 from variable index 3 to 23 whose closest grain (#347) is at a distance of 37.054
+
+[39m[33mGrain #2200 intersects Grain #2208 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2200 from variable index 3 to 18 whose closest grain (#2027) is at a distance of 20.8087
+
+[39m[33mGrain #2230 intersects Grain #2231 (variable index: 3)
+[39m[32m- Depth 0: Remapping grain #2230 from variable index 3 to 25 whose closest grain (#921) is at a distance of 54
+
+[39m[33mGrain #2238 intersects Grain #2241 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2238 from variable index 4 to 24 whose closest grain (#1771) is at a distance of 51.4296
+
+[39m[33mGrain #2249 intersects Grain #2252 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2249 from variable index 4 to 26 whose closest grain (#634) is at a distance of 41.0974
+
+[39m[33mGrain #2272 intersects Grain #2275 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2272 from variable index 4 to 22 whose closest grain (#1651) is at a distance of 46.1952
+
+[39m[33mGrain #2280 intersects Grain #2538 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2280 from variable index 4 to 21 whose closest grain (#909) is at a distance of 33
+
+[39m[33mGrain #2286 intersects Grain #2344 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2286 from variable index 4 to 24 whose closest grain (#2238) is at a distance of 26.6833
+
+[39m[33mGrain #2301 intersects Grain #2321 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2301 from variable index 4 to 17 whose closest grain (#155) is at a distance of 20.8806
+
+[39m[33mGrain #2313 intersects Grain #2317 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2313 from variable index 4 to 23 whose closest grain (#1836) is at a distance of 15.2971
+
+[39m[33mGrain #2329 intersects Grain #2332 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2329 from variable index 4 to 16 whose closest grain (#1205) is at a distance of 30.6757
+
+[39m[33mGrain #2341 intersects Grain #2343 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2341 from variable index 4 to 25 whose closest grain (#761) is at a distance of 39
+
+[39m[33mGrain #2350 intersects Grain #2351 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2350 from variable index 4 to 15 whose closest grain (#5986) is at a distance of 46.1628
+
+[39m[33mGrain #2375 intersects Grain #2378 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2375 from variable index 4 to 27 whose closest grain (#210) is at a distance of 33.5261
+
+[39m[33mGrain #2412 intersects Grain #2423 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2412 from variable index 4 to 27 whose closest grain (#450) is at a distance of 23.9583
+
+[39m[33mGrain #2420 intersects Grain #2424 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2420 from variable index 4 to 19 whose closest grain (#970) is at a distance of 46.8722
+
+[39m[33mGrain #2445 intersects Grain #2449 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2445 from variable index 4 to 24 whose closest grain (#164) is at a distance of 60
+
+[39m[33mGrain #2447 intersects Grain #2452 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2447 from variable index 4 to 17 whose closest grain (#1349) is at a distance of 46.6476
+
+[39m[33mGrain #2460 intersects Grain #2505 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2460 from variable index 4 to 23 whose closest grain (#1768) is at a distance of 30
+
+[39m[33mGrain #2482 intersects Grain #2486 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2482 from variable index 4 to 19 whose closest grain (#1723) is at a distance of 38.0789
+
+[39m[33mGrain #2514 intersects Grain #2515 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2514 from variable index 4 to 23 whose closest grain (#2460) is at a distance of 36.7696
+
+[39m[33mGrain #2518 intersects Grain #2549 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2518 from variable index 4 to 22 whose closest grain (#345) is at a distance of 24.5967
+
+[39m[33mGrain #2532 intersects Grain #2741 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2532 from variable index 4 to 24 whose closest grain (#858) is at a distance of 30
+
+[39m[33mGrain #2551 intersects Grain #2749 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2551 from variable index 4 to 17 whose closest grain (#860) is at a distance of 47.2546
+
+[39m[33mGrain #2552 intersects Grain #2553 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2552 from variable index 4 to 26 whose closest grain (#1676) is at a distance of 56.921
+
+[39m[33mGrain #2558 intersects Grain #2567 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2558 from variable index 4 to 26 whose closest grain (#330) is at a distance of 33.9706
+
+[39m[33mGrain #2562 intersects Grain #2565 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2562 from variable index 4 to 19 whose closest grain (#905) is at a distance of 39.6232
+
+[39m[33mGrain #2569 intersects Grain #2577 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2569 from variable index 4 to 18 whose closest grain (#1516) is at a distance of 45.2548
+
+[39m[33mGrain #2573 intersects Grain #2577 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2573 from variable index 4 to 21 whose closest grain (#814) is at a distance of 42
+
+[39m[33mGrain #2582 intersects Grain #2649 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2582 from variable index 4 to 23 whose closest grain (#1525) is at a distance of 21
+
+[39m[33mGrain #2599 intersects Grain #2601 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2599 from variable index 4 to 21 whose closest grain (#147) is at a distance of 27.4591
+
+[39m[33mGrain #2609 intersects Grain #2610 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2609 from variable index 4 to 26 whose closest grain (#442) is at a distance of 34.4819
+
+[39m[33mGrain #2623 intersects Grain #2665 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2623 from variable index 4 to 25 whose closest grain (#466) is at a distance of 38.923
+
+[39m[33mGrain #2636 intersects Grain #2643 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2636 from variable index 4 to 26 whose closest grain (#1015) is at a distance of 27.2029
+
+[39m[33mGrain #2679 intersects Grain #2705 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2679 from variable index 4 to 18 whose closest grain (#445) is at a distance of 35.4683
+
+[39m[33mGrain #2713 intersects Grain #2729 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2713 from variable index 4 to 25 whose closest grain (#466) is at a distance of 18
+
+[39m[33mGrain #2734 intersects Grain #2735 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2734 from variable index 4 to 19 whose closest grain (#905) is at a distance of 51.1175
+
+[39m[33mGrain #2751 intersects Grain #2752 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #2751 from variable index 4 to 20 whose closest grain (#455) is at a distance of 48.0937
+
+[39m[33mGrain #2753 intersects Grain #2754 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2753 from variable index 5 to 27 whose closest grain (#44) is at a distance of 48.5901
+
+[39m[33mGrain #2761 intersects Grain #2764 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2761 from variable index 5 to 17 whose closest grain (#625) is at a distance of 40
+
+[39m[33mGrain #2772 intersects Grain #2812 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2772 from variable index 5 to 27 whose closest grain (#823) is at a distance of 42.19
+
+[39m[33mGrain #2775 intersects Grain #2818 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2775 from variable index 5 to 17 whose closest grain (#860) is at a distance of 17.0294
+
+[39m[33mGrain #2778 intersects Grain #2783 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2778 from variable index 5 to 20 whose closest grain (#54) is at a distance of 64.9384
+
+[39m[33mGrain #2780 intersects Grain #2800 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2780 from variable index 5 to 26 whose closest grain (#2249) is at a distance of 34.0147
+
+[39m[33mGrain #2788 intersects Grain #3233 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2788 from variable index 5 to 27 whose closest grain (#44) is at a distance of 34.2345
+
+[39m[33mGrain #2804 intersects Grain #2808 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2804 from variable index 5 to 18 whose closest grain (#1766) is at a distance of 22
+
+[39m[33mGrain #2808 intersects Grain #2809 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2808 from variable index 5 to 21 whose closest grain (#1731) is at a distance of 31.0161
+
+[39m[33mGrain #2809 intersects Grain #2854 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2809 from variable index 5 to 27 whose closest grain (#673) is at a distance of 19
+
+[39m[33mGrain #2811 intersects Grain #2817 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2811 from variable index 5 to 21 whose closest grain (#1251) is at a distance of 18.6815
+
+[39m[33mGrain #2814 intersects Grain #2834 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2814 from variable index 5 to 25 whose closest grain (#1764) is at a distance of 14
+
+[39m[33mGrain #2822 intersects Grain #2825 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2822 from variable index 5 to 19 whose closest grain (#1839) is at a distance of 33
+
+[39m[33mGrain #2828 intersects Grain #2854 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2828 from variable index 5 to 16 whose closest grain (#2329) is at a distance of 11
+
+[39m[33mGrain #2844 intersects Grain #2846 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2844 from variable index 5 to 22 whose closest grain (#1757) is at a distance of 29.4109
+
+[39m[33mGrain #2848 intersects Grain #2852 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2848 from variable index 5 to 19 whose closest grain (#1839) is at a distance of 25.632
+
+[39m[33mGrain #2858 intersects Grain #2870 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2858 from variable index 5 to 18 whose closest grain (#697) is at a distance of 23
+
+[39m[33mGrain #2863 intersects Grain #2866 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2863 from variable index 5 to 27 whose closest grain (#673) is at a distance of 46.7547
+
+[39m[33mGrain #2864 intersects Grain #2867 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2864 from variable index 5 to 25 whose closest grain (#80) is at a distance of 24
+
+[39m[33mGrain #2881 intersects Grain #2892 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2881 from variable index 5 to 23 whose closest grain (#126) is at a distance of 17.4642
+
+[39m[33mGrain #2888 intersects Grain #2895 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2888 from variable index 5 to 19 whose closest grain (#1550) is at a distance of 33.541
+
+[39m[33mGrain #2903 intersects Grain #2905 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2903 from variable index 5 to 27 whose closest grain (#673) is at a distance of 32
+
+[39m[33mGrain #2917 intersects Grain #2924 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2917 from variable index 5 to 20 whose closest grain (#1272) is at a distance of 21.587
+
+[39m[33mGrain #2923 intersects Grain #3004 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2923 from variable index 5 to 21 whose closest grain (#1230) is at a distance of 25.632
+
+[39m[33mGrain #2929 intersects Grain #2936 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2929 from variable index 5 to 17 whose closest grain (#1883) is at a distance of 13.0384
+
+[39m[33mGrain #2930 intersects Grain #3094 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2930 from variable index 5 to 25 whose closest grain (#191) is at a distance of 22.0907
+
+[39m[33mGrain #2946 intersects Grain #2948 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2946 from variable index 5 to 20 whose closest grain (#1339) is at a distance of 29.1548
+
+[39m[33mGrain #2950 intersects Grain #2956 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #2950 from variable index 5 to 26 whose closest grain (#1898) is at a distance of 23
+
+[39m[33mGrain #3002 intersects Grain #3009 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #3002 from variable index 5 to 19 whose closest grain (#877) is at a distance of 24.0416
+
+[39m[33mGrain #3005 intersects Grain #3010 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #3005 from variable index 5 to 26 whose closest grain (#1459) is at a distance of 26.4008
+
+[39m[33mGrain #3025 intersects Grain #3026 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #3025 from variable index 5 to 21 whose closest grain (#2280) is at a distance of 34
+
+[39m[33mGrain #3105 intersects Grain #3109 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #3105 from variable index 5 to 25 whose closest grain (#466) is at a distance of 25.4951
+
+[39m[33mGrain #3118 intersects Grain #3121 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #3118 from variable index 5 to 19 whose closest grain (#1550) is at a distance of 52.9623
+
+[39m[33mGrain #3247 intersects Grain #3249 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #3247 from variable index 5 to 23 whose closest grain (#347) is at a distance of 46.5725
+
+[39m[33mGrain #3256 intersects Grain #3282 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3256 from variable index 6 to 23 whose closest grain (#622) is at a distance of 34.4819
+
+[39m[33mGrain #3265 intersects Grain #3286 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3265 from variable index 6 to 16 whose closest grain (#1742) is at a distance of 28
+
+[39m[33mGrain #3284 intersects Grain #3713 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3284 from variable index 6 to 24 whose closest grain (#2238) is at a distance of 25.2982
+
+[39m[33mGrain #3288 intersects Grain #3291 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3288 from variable index 6 to 21 whose closest grain (#2280) is at a distance of 26.0768
+
+[39m[33mGrain #3289 intersects Grain #3292 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3289 from variable index 6 to 20 whose closest grain (#1457) is at a distance of 31.3847
+
+[39m[33mGrain #3290 intersects Grain #3705 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3290 from variable index 6 to 22 whose closest grain (#1757) is at a distance of 23.8537
+
+[39m[33mGrain #3368 intersects Grain #3369 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3368 from variable index 6 to 18 whose closest grain (#151) is at a distance of 23.4094
+
+[39m[33mGrain #3371 intersects Grain #3383 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3371 from variable index 6 to 21 whose closest grain (#2923) is at a distance of 16.6132
+
+[39m[33mGrain #3373 intersects Grain #3376 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3373 from variable index 6 to 18 whose closest grain (#2858) is at a distance of 24.0832
+
+[39m[33mGrain #3386 intersects Grain #3407 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3386 from variable index 6 to 24 whose closest grain (#1338) is at a distance of 28
+
+[39m[33mGrain #3401 intersects Grain #3423 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3401 from variable index 6 to 22 whose closest grain (#133) is at a distance of 47.5184
+
+[39m[33mGrain #3432 intersects Grain #3437 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3432 from variable index 6 to 15 whose closest grain (#5990) is at a distance of 50.2892
+
+[39m[33mGrain #3498 intersects Grain #3501 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3498 from variable index 6 to 22 whose closest grain (#2518) is at a distance of 24
+
+[39m[33mGrain #3500 intersects Grain #3503 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3500 from variable index 6 to 16 whose closest grain (#282) is at a distance of 30
+
+[39m[33mGrain #3502 intersects Grain #3508 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3502 from variable index 6 to 24 whose closest grain (#2445) is at a distance of 28.0179
+
+[39m[33mGrain #3521 intersects Grain #3565 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3521 from variable index 6 to 24 whose closest grain (#999) is at a distance of 21.7715
+
+[39m[33mGrain #3528 intersects Grain #3574 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3528 from variable index 6 to 16 whose closest grain (#1470) is at a distance of 35.1283
+
+[39m[33mGrain #3531 intersects Grain #3537 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3531 from variable index 6 to 15 whose closest grain (#5998) is at a distance of 25
+
+[39m[33mGrain #3535 intersects Grain #3538 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3535 from variable index 6 to 19 whose closest grain (#1567) is at a distance of 30
+
+[39m[33mGrain #3571 intersects Grain #3574 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3571 from variable index 6 to 17 whose closest grain (#1463) is at a distance of 44.0114
+
+[39m[33mGrain #3600 intersects Grain #3641 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3600 from variable index 6 to 22 whose closest grain (#426) is at a distance of 22
+
+[39m[33mGrain #3662 intersects Grain #3674 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3662 from variable index 6 to 19 whose closest grain (#1056) is at a distance of 32.7567
+
+[39m[33mGrain #3672 intersects Grain #3688 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3672 from variable index 6 to 15 whose closest grain (#5994) is at a distance of 38.6005
+
+[39m[33mGrain #3689 intersects Grain #3696 (variable index: 6)
+[39m[32m- Depth 0: Remapping grain #3689 from variable index 6 to 27 whose closest grain (#2037) is at a distance of 47.676
+
+[39m[33mGrain #3766 intersects Grain #3782 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3766 from variable index 7 to 26 whose closest grain (#1459) is at a distance of 21.8403
+
+[39m[33mGrain #3786 intersects Grain #3787 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3786 from variable index 7 to 19 whose closest grain (#2734) is at a distance of 22.2036
+
+[39m[33mGrain #3787 intersects Grain #4173 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3787 from variable index 7 to 18 whose closest grain (#1766) is at a distance of 13
+
+[39m[33mGrain #3836 intersects Grain #3840 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3836 from variable index 7 to 16 whose closest grain (#2329) is at a distance of 22.561
+
+[39m[33mGrain #3838 intersects Grain #3840 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3838 from variable index 7 to 17 whose closest grain (#1270) is at a distance of 26.2488
+
+[39m[33mGrain #3845 intersects Grain #3846 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3845 from variable index 7 to 26 whose closest grain (#1278) is at a distance of 20.8806
+
+[39m[33mGrain #3983 intersects Grain #4017 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3983 from variable index 7 to 27 whose closest grain (#2037) is at a distance of 29.95
+
+[39m[33mGrain #3984 intersects Grain #3991 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3984 from variable index 7 to 16 whose closest grain (#282) is at a distance of 34.8999
+
+[39m[33mGrain #3986 intersects Grain #3990 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3986 from variable index 7 to 26 whose closest grain (#634) is at a distance of 33
+
+[39m[33mGrain #3997 intersects Grain #3999 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #3997 from variable index 7 to 18 whose closest grain (#289) is at a distance of 32
+
+[39m[33mGrain #4007 intersects Grain #4013 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4007 from variable index 7 to 26 whose closest grain (#2558) is at a distance of 21.9773
+
+[39m[33mGrain #4020 intersects Grain #4196 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4020 from variable index 7 to 16 whose closest grain (#3984) is at a distance of 31.1448
+
+[39m[33mGrain #4050 intersects Grain #4089 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4050 from variable index 7 to 15 whose closest grain (#5990) is at a distance of 17.1172
+
+[39m[33mGrain #4087 intersects Grain #4089 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4087 from variable index 7 to 23 whose closest grain (#2582) is at a distance of 19
+
+[39m[33mGrain #4091 intersects Grain #4093 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4091 from variable index 7 to 15 whose closest grain (#5995) is at a distance of 22.4722
+
+[39m[33mGrain #4101 intersects Grain #4117 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4101 from variable index 7 to 16 whose closest grain (#537) is at a distance of 31.8748
+
+[39m[33mGrain #4113 intersects Grain #4137 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4113 from variable index 7 to 24 whose closest grain (#1012) is at a distance of 30
+
+[39m[33mGrain #4148 intersects Grain #4151 (variable index: 7)
+[39m[32m- Depth 0: Remapping grain #4148 from variable index 7 to 21 whose closest grain (#1071) is at a distance of 38.6394
+
+[39m[33mGrain #4207 intersects Grain #4208 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4207 from variable index 8 to 20 whose closest grain (#2778) is at a distance of 21.9773
+
+[39m[33mGrain #4244 intersects Grain #4248 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4244 from variable index 8 to 24 whose closest grain (#2286) is at a distance of 21.9545
+
+[39m[33mGrain #4256 intersects Grain #4259 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4256 from variable index 8 to 17 whose closest grain (#2761) is at a distance of 26
+
+[39m[33mGrain #4260 intersects Grain #4263 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4260 from variable index 8 to 20 whose closest grain (#4207) is at a distance of 19.4165
+
+[39m[33mGrain #4263 intersects Grain #4265 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4263 from variable index 8 to 23 whose closest grain (#2313) is at a distance of 23
+
+[39m[33mGrain #4279 intersects Grain #4281 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4279 from variable index 8 to 27 whose closest grain (#673) is at a distance of 32
+
+[39m[33mGrain #4287 intersects Grain #4289 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4287 from variable index 8 to 21 whose closest grain (#1251) is at a distance of 31.1448
+
+[39m[33mGrain #4325 intersects Grain #4331 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4325 from variable index 8 to 23 whose closest grain (#227) is at a distance of 18.1108
+
+[39m[33mGrain #4341 intersects Grain #4342 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4341 from variable index 8 to 17 whose closest grain (#2447) is at a distance of 23
+
+[39m[33mGrain #4351 intersects Grain #4357 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4351 from variable index 8 to 25 whose closest grain (#761) is at a distance of 33.9116
+
+[39m[33mGrain #4423 intersects Grain #4454 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4423 from variable index 8 to 24 whose closest grain (#3521) is at a distance of 22
+
+[39m[33mGrain #4441 intersects Grain #4451 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4441 from variable index 8 to 20 whose closest grain (#2751) is at a distance of 24.7588
+
+[39m[33mGrain #4466 intersects Grain #4476 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4466 from variable index 8 to 25 whose closest grain (#921) is at a distance of 31.0644
+
+[39m[33mGrain #4493 intersects Grain #4498 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4493 from variable index 8 to 24 whose closest grain (#999) is at a distance of 33.1361
+
+[39m[33mGrain #4494 intersects Grain #4515 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4494 from variable index 8 to 21 whose closest grain (#1544) is at a distance of 31
+
+[39m[33mGrain #4502 intersects Grain #4523 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4502 from variable index 8 to 19 whose closest grain (#1550) is at a distance of 18
+
+[39m[33mGrain #4503 intersects Grain #4508 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4503 from variable index 8 to 18 whose closest grain (#2569) is at a distance of 21.9317
+
+[39m[33mGrain #4534 intersects Grain #4540 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4534 from variable index 8 to 21 whose closest grain (#1071) is at a distance of 24.7386
+
+[39m[33mGrain #4551 intersects Grain #4552 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4551 from variable index 8 to 27 whose closest grain (#4279) is at a distance of 16.5529
+
+[39m[33mGrain #4554 intersects Grain #4555 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4554 from variable index 8 to 26 whose closest grain (#2636) is at a distance of 21.0238
+
+[39m[33mGrain #4558 intersects Grain #4562 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4558 from variable index 8 to 25 whose closest grain (#1629) is at a distance of 37.9473
+
+[39m[33mGrain #4579 intersects Grain #4584 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4579 from variable index 8 to 24 whose closest grain (#525) is at a distance of 26.9258
+
+[39m[33mGrain #4601 intersects Grain #4616 (variable index: 8)
+[39m[32m- Depth 0: Remapping grain #4601 from variable index 8 to 16 whose closest grain (#4020) is at a distance of 21.9545
+
+[39m[33mGrain #4626 intersects Grain #4628 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4626 from variable index 9 to 22 whose closest grain (#1757) is at a distance of 18
+
+[39m[33mGrain #4653 intersects Grain #4985 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4653 from variable index 9 to 27 whose closest grain (#3983) is at a distance of 37.8682
+
+[39m[33mGrain #4654 intersects Grain #4655 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4654 from variable index 9 to 15 whose closest grain (#5984) is at a distance of 17
+
+[39m[33mGrain #4671 intersects Grain #4730 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4671 from variable index 9 to 19 whose closest grain (#1839) is at a distance of 16
+
+[39m[33mGrain #4678 intersects Grain #4705 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4678 from variable index 9 to 24 whose closest grain (#1771) is at a distance of 19
+
+[39m[33mGrain #4691 intersects Grain #4692 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4691 from variable index 9 to 20 whose closest grain (#1263) is at a distance of 28.0179
+
+[39m[33mGrain #4700 intersects Grain #4702 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4700 from variable index 9 to 15 whose closest grain (#2350) is at a distance of 10.0499
+
+[39m[33mGrain #4710 intersects Grain #4718 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4710 from variable index 9 to 21 whose closest grain (#3371) is at a distance of 11
+
+[39m[33mGrain #4728 intersects Grain #4737 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4728 from variable index 9 to 27 whose closest grain (#2903) is at a distance of 15.8114
+
+[39m[33mGrain #4736 intersects Grain #4903 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4736 from variable index 9 to 20 whose closest grain (#193) is at a distance of 20.0998
+
+[39m[33mGrain #4738 intersects Grain #4740 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4738 from variable index 9 to 25 whose closest grain (#761) is at a distance of 20
+
+[39m[33mGrain #4742 intersects Grain #4904 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4742 from variable index 9 to 19 whose closest grain (#148) is at a distance of 20.5183
+
+[39m[33mGrain #4755 intersects Grain #4759 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4755 from variable index 9 to 18 whose closest grain (#1318) is at a distance of 23
+
+[39m[33mGrain #4757 intersects Grain #4761 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4757 from variable index 9 to 21 whose closest grain (#1335) is at a distance of 15
+
+[39m[33mGrain #4771 intersects Grain #4785 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4771 from variable index 9 to 25 whose closest grain (#4351) is at a distance of 27
+
+[39m[33mGrain #4774 intersects Grain #4819 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4774 from variable index 9 to 16 whose closest grain (#1881) is at a distance of 30
+
+[39m[33mGrain #4794 intersects Grain #4795 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4794 from variable index 9 to 26 whose closest grain (#66) is at a distance of 30.8058
+
+[39m[33mGrain #4842 intersects Grain #4848 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4842 from variable index 9 to 24 whose closest grain (#3521) is at a distance of 15
+
+[39m[33mGrain #4928 intersects Grain #4931 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4928 from variable index 9 to 25 whose closest grain (#2623) is at a distance of 10
+
+[39m[33mGrain #4958 intersects Grain #4988 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4958 from variable index 9 to 18 whose closest grain (#523) is at a distance of 20
+
+[39m[33mGrain #4962 intersects Grain #4991 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4962 from variable index 9 to 20 whose closest grain (#3289) is at a distance of 25
+
+[39m[33mGrain #4988 intersects Grain #4990 (variable index: 9)
+[39m[32m- Depth 0: Remapping grain #4988 from variable index 9 to 19 whose closest grain (#1567) is at a distance of 33.3766
+
+[39m[33mGrain #5024 intersects Grain #5189 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5024 from variable index 10 to 25 whose closest grain (#1157) is at a distance of 17.088
+
+[39m[33mGrain #5041 intersects Grain #5159 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5041 from variable index 10 to 27 whose closest grain (#823) is at a distance of 17.4642
+
+[39m[33mGrain #5051 intersects Grain #5061 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5051 from variable index 10 to 19 whose closest grain (#3662) is at a distance of 30.4631
+
+[39m[33mGrain #5077 intersects Grain #5088 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5077 from variable index 10 to 25 whose closest grain (#4738) is at a distance of 18
+
+[39m[33mGrain #5078 intersects Grain #5100 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5078 from variable index 10 to 17 whose closest grain (#155) is at a distance of 13.8924
+
+[39m[33mGrain #5118 intersects Grain #5124 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5118 from variable index 10 to 18 whose closest grain (#1516) is at a distance of 18
+
+[39m[33mGrain #5132 intersects Grain #5133 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5132 from variable index 10 to 20 whose closest grain (#193) is at a distance of 28.6007
+
+[39m[33mGrain #5145 intersects Grain #5158 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5145 from variable index 10 to 20 whose closest grain (#309) is at a distance of 49
+
+[39m[33mGrain #5178 intersects Grain #5182 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5178 from variable index 10 to 20 whose closest grain (#309) is at a distance of 20.8806
+
+[39m[33mGrain #5218 intersects Grain #5238 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5218 from variable index 10 to 20 whose closest grain (#2079) is at a distance of 48.5077
+
+[39m[33mGrain #5245 intersects Grain #5285 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5245 from variable index 10 to 25 whose closest grain (#466) is at a distance of 14
+
+[39m[33mGrain #5264 intersects Grain #5277 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5264 from variable index 10 to 22 whose closest grain (#1570) is at a distance of 18.0278
+
+[39m[33mGrain #5268 intersects Grain #5269 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5268 from variable index 10 to 15 whose closest grain (#5994) is at a distance of 24.6982
+
+[39m[33mGrain #5283 intersects Grain #5284 (variable index: 10)
+[39m[32m- Depth 0: Remapping grain #5283 from variable index 10 to 20 whose closest grain (#455) is at a distance of 28.0713
+
+[39m[33mGrain #5374 intersects Grain #5376 (variable index: 11)
+[39m[32m- Depth 0: Remapping grain #5374 from variable index 11 to 23 whose closest grain (#126) is at a distance of 24.0416
+
+[39m[33mGrain #5442 intersects Grain #5451 (variable index: 11)
+[39m[32m- Depth 0: Remapping grain #5442 from variable index 11 to 24 whose closest grain (#858) is at a distance of 29.5466
+
+[39m[33mGrain #5589 intersects Grain #5593 (variable index: 11)
+[39m[32m- Depth 0: Remapping grain #5589 from variable index 11 to 23 whose closest grain (#1184) is at a distance of 19
+
+[39m[33mGrain #5601 intersects Grain #5682 (variable index: 12)
+[39m[32m- Depth 0: Remapping grain #5601 from variable index 12 to 21 whose closest grain (#3288) is at a distance of 26.5707
+
+[39m[33mGrain #5689 intersects Grain #5711 (variable index: 12)
+[39m[32m- Depth 0: Remapping grain #5689 from variable index 12 to 23 whose closest grain (#2514) is at a distance of 12
+
+[39m[33mGrain #5704 intersects Grain #5706 (variable index: 12)
+[39m[32m- Depth 0: Remapping grain #5704 from variable index 12 to 25 whose closest grain (#191) is at a distance of 32.2025
+
+[39m[33mGrain #5728 intersects Grain #5729 (variable index: 12)
+[39m[32m- Depth 0: Remapping grain #5728 from variable index 12 to 27 whose closest grain (#396) is at a distance of 31.6228
+
+[39m[33mGrain #5785 intersects Grain #5786 (variable index: 12)
+[39m[32m- Depth 0: Remapping grain #5785 from variable index 12 to 23 whose closest grain (#622) is at a distance of 26
+
+[39m[33mGrain #5791 intersects Grain #5792 (variable index: 12)
+[39m[32m- Depth 0: Remapping grain #5791 from variable index 12 to 25 whose closest grain (#1157) is at a distance of 21.095
+
+[39m[33mGrain #5816 intersects Grain #5855 (variable index: 13)
+[39m[32m- Depth 0: Remapping grain #5816 from variable index 13 to 24 whose closest grain (#858) is at a distance of 15.4272
+
+[39m[33mGrain #5899 intersects Grain #5911 (variable index: 13)
+[39m[32m- Depth 0: Remapping grain #5899 from variable index 13 to 22 whose closest grain (#487) is at a distance of 27
+
+[39mFinished inside of GrainTracker
+
+Outputting nemesis ...                                                                     [[33m  4.36 s[39m]
+
+Time Step 0, time = 0
+
+Postprocessor Values:
++----------------+----------------+----------------+----------------+----------------+----------------+
+| time           | DOFs           | dt             | grain_tracker  | n_elements     | n_nodes        |
++----------------+----------------+----------------+----------------+----------------+----------------+
+|   0.000000e+00 |   0.000000e+00 |   0.000000e+00 |   6.000000e+03 |   0.000000e+00 |   0.000000e+00 |
++----------------+----------------+----------------+----------------+----------------+----------------+
+
+Outputting checkpoint 
+................                                                                           [[33m 17.02 s[39m]
+
+Time Step 1, time = 0.0002, dt = 0.0002
+Computing initial residual ...........................................                     [[33m 44.91 s[39m]
+ 0 Nonlinear |R| = [32m1.958070e+07[39m
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 320672 RUNNING AT pwmoose-PowerEdge-T640
+=   EXIT CODE: 9
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
