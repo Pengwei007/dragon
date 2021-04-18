@@ -1,0 +1,192 @@
+
+Building mesh ............................................................................
+..........................................................................................
+..........................................................................................
+..............................                                                             [[33m287.89 s[39m]
+Initializing equation system .......................                                       [[33m 25.00 s[39m]
+Computing max dofs per elem/node                                                           [[33m  1.51 s[39m]
+
+Framework Information:
+MOOSE Version:           git commit 54c00d0775 on 2020-12-17
+LibMesh Version:         c176405e538983b35afc4f6827e29e155141e42e
+PETSc Version:           3.14.2
+SLEPc Version:           3.14.0
+Current Time:            Fri Apr 16 15:21:49 2021
+Executable Timestamp:    Sun Dec 20 22:02:49 2020
+
+Parallelism:
+  Num Processors:          30
+  Num Threads:             1
+
+Mesh: 
+  Parallel Type:           distributed
+  Mesh Dimension:          3
+  Spatial Dimension:       3
+  Nodes:                   
+    Total:                 5929741
+    Local:                 205792
+  Elems:                   
+    Total:                 5832000
+    Local:                 194399
+  Num Subdomains:          1
+  Num Partitions:          30
+  Partitioner:             parmetis
+
+Nonlinear System:
+  Num DOFs:                118594820
+  Num Local DOFs:          4115840
+  Variables:               { "gr0" "gr1" "gr2" "gr3" "gr4" ... "gr15" "gr16" "gr17" "gr18" "gr19" } 
+  Finite Element Types:    "LAGRANGE" 
+  Approximation Orders:    "FIRST" 
+
+Auxiliary System:
+  Num DOFs:                29257741
+  Num Local DOFs:          983388
+  Variables:               "bnds" { "unique_grains" "ghost_elements" "halos" "var_indices" } 
+  Finite Element Types:    "LAGRANGE" "MONOMIAL" 
+  Approximation Orders:    "FIRST" "CONSTANT" 
+
+Execution Information:
+  Executioner:             Transient
+  TimeStepper:             IterationAdaptiveDT
+  Solver Mode:             Preconditioned JFNK
+  PETSc Preconditioner:    asm 
+
+[31mLEGACY MODES ENABLED:[39m
+ This application uses the legacy material output option: material properties are output only on TIMESTEP_END, not INITIAL. To remove this message, set 'use_legacy_material_output' to false in this application. If there are gold output files that contain material property output for which output occurs on INITIAL, then these will generate diffs due to zero values being stored, and these tests should be re-golded.
+[39m
+Computing Polycrystal Initial Condition ..                                                 [[33m  3.37 s[39m]
+Finalizing Polycrystal Initial Condition ...                                               [[33m  4.71 s[39m]
+Projecting initial condition .............................................................
+..........................................................................................
+..........................................................................................
+..............................................                                             [[33m288.80 s[39m]
+Computing initial stateful property values ...........                                     [[33m 12.22 s[39m]
+Flooding Features ........................................................................
+...............................................................                            [[33m136.43 s[39m]
+[33mGrain #69 intersects Grain #70 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #69 from variable index 4 to 10 which currently contains zero grains.
+
+[39m[33mGrain #73 intersects Grain #74 (variable index: 4)
+[39m[32m- Depth 0: Remapping grain #73 from variable index 4 to 19 which currently contains zero grains.
+
+[39mFinished inside of GrainTracker
+
+Outputting nemesis ..                                                                      [[33m  3.77 s[39m]
+
+Time Step 0, time = 0
+
+Postprocessor Values:
++----------------+----------------+----------------+----------------+----------------+----------------+
+| time           | DOFs           | dt             | grain_tracker  | n_elements     | n_nodes        |
++----------------+----------------+----------------+----------------+----------------+----------------+
+|   0.000000e+00 |   0.000000e+00 |   0.000000e+00 |   1.000000e+02 |   0.000000e+00 |   0.000000e+00 |
++----------------+----------------+----------------+----------------+----------------+----------------+
+
+Outputting checkpoint 
+..........                                                                                 [[33m 11.96 s[39m]
+
+Time Step 1, time = 0.0002, dt = 0.0002
+Computing initial residual ...............................                                 [[33m 32.16 s[39m]
+ 0 Nonlinear |R| = [32m9.122373e+06[39m
+      0 Linear |R| = [32m9.122373e+06[39m
+      1 Linear |R| = [32m1.754047e+05[39m
+      2 Linear |R| = [32m2.701934e+04[39m
+      3 Linear |R| = [32m4.374308e+03[39m
+      4 Linear |R| = [32m4.986961e+02[39m
+ 1 Nonlinear |R| = [32m9.414584e+05[39m
+      0 Linear |R| = [32m9.414584e+05[39m
+      1 Linear |R| = [32m6.786378e+04[39m
+      2 Linear |R| = [32m2.435714e+04[39m
+      3 Linear |R| = [32m9.138653e+03[39m
+      4 Linear |R| = [32m2.009301e+03[39m
+      5 Linear |R| = [32m6.917171e+02[39m
+      6 Linear |R| = [32m2.016302e+02[39m
+      7 Linear |R| = [32m6.827019e+01[39m
+ 2 Nonlinear |R| = [32m3.458900e+04[39m
+      0 Linear |R| = [32m3.458900e+04[39m
+      1 Linear |R| = [32m7.896296e+03[39m
+      2 Linear |R| = [32m3.924908e+03[39m
+      3 Linear |R| = [32m1.016625e+03[39m
+      4 Linear |R| = [32m3.070875e+02[39m
+      5 Linear |R| = [32m1.306236e+02[39m
+      6 Linear |R| = [32m3.819594e+01[39m
+      7 Linear |R| = [32m1.458296e+01[39m
+      8 Linear |R| = [32m5.085222e+00[39m
+      9 Linear |R| = [32m1.788719e+00[39m
+ 3 Nonlinear |R| = [32m2.778716e+02[39m
+      0 Linear |R| = [32m2.778716e+02[39m
+      1 Linear |R| = [32m8.352329e+01[39m
+      2 Linear |R| = [32m4.232236e+01[39m
+      3 Linear |R| = [32m1.095037e+01[39m
+      4 Linear |R| = [32m3.600291e+00[39m
+      5 Linear |R| = [32m1.502624e+00[39m
+      6 Linear |R| = [32m4.973905e-01[39m
+      7 Linear |R| = [32m1.775523e-01[39m
+      8 Linear |R| = [32m6.740078e-02[39m
+      9 Linear |R| = [32m2.341919e-02[39m
+ 4 Nonlinear |R| = [32m1.031899e-01[39m
+      0 Linear |R| = [32m1.031899e-01[39m
+      1 Linear |R| = [32m3.424362e-02[39m
+      2 Linear |R| = [32m1.749834e-02[39m
+      3 Linear |R| = [32m4.720355e-03[39m
+      4 Linear |R| = [32m1.620193e-03[39m
+      5 Linear |R| = [32m6.145230e-04[39m
+      6 Linear |R| = [32m1.912336e-04[39m
+      7 Linear |R| = [32m6.917985e-05[39m
+      8 Linear |R| = [32m2.740259e-05[39m
+      9 Linear |R| = [32m1.045205e-05[39m
+     10 Linear |R| = [32m3.887026e-06[39m
+ 5 Nonlinear |R| = [32m3.885464e-06[39m
+[32m Solve Converged![39m
+Flooding Features ........................................................................
+.                                                                                          [[33m 74.31 s[39m]
+
+Grain Tracker Status:
+Grains active index 0: 18 -> 18
+Grains active index 1: 15 -> 15
+Grains active index 2: 16 -> 16
+Grains active index 3: 13 -> 13
+Grains active index 4: 13 -> 13
+Grains active index 5: 10 -> 10
+Grains active index 6: 5 -> 5
+Grains active index 7: 4 -> 4
+Grains active index 8: 2 -> 2
+Grains active index 9: 2 -> 2
+Grains active index 10: 1 -> 1
+Grains active index 11: 0 -> 0
+Grains active index 12: 0 -> 0
+Grains active index 13: 0 -> 0
+Grains active index 14: 0 -> 0
+Grains active index 15: 0 -> 0
+Grains active index 16: 0 -> 0
+Grains active index 17: 0 -> 0
+Grains active index 18: 0 -> 0
+Grains active index 19: 1 -> 1
+
+[33mGrain #81 intersects Grain #85 (variable index: 5)
+[39m[32m- Depth 0: Remapping grain #81 from variable index 5 to 18 which currently contains zero grains.
+
+[39mFinished inside of GrainTracker
+
+Outputting console .........
+Outlier Variable Residual Norms:
+  gr0: [33m1.835927e-06[39m
+  gr1: [33m1.262887e-06[39m
+  gr2: [33m1.396750e-06[39m
+  gr3: [33m1.975972e-06[39m
+
+Postprocessor Values:
++----------------+----------------+----------------+----------------+----------------+----------------+
+| time           | DOFs           | dt             | grain_tracker  | n_elements     | n_nodes        |
++----------------+----------------+----------------+----------------+----------------+----------------+
+|   0.000000e+00 |   0.000000e+00 |   0.000000e+00 |   1.000000e+02 |   0.000000e+00 |   0.000000e+00 |
+|   2.000000e-04 |   1.478526e+08 |   2.000000e-04 |   1.000000e+02 |   5.832000e+06 |   5.929741e+06 |
++----------------+----------------+----------------+----------------+----------------+----------------+
+
+                                                               [[33m 10.90 s[39m]
+Outputting checkpoint .......                                                              [[33m  8.88 s[39m]
+
+Time Step 2, time = 0.00042, dt = 0.00022
+Computing initial residual ..............................                                  [[33m 31.72 s[39m]
+ 0 Nonlinear |R| = [32m1.556308e+06[39m
